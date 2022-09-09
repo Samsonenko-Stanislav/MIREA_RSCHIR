@@ -5,11 +5,11 @@ services:
     restart: always
     build: server
     ports:
-      - '8001:80'
+      - '80:80'
     container_name: mirea_rschir_first_server
   db:
     build: db
     restart: always
     ports:
-      - '8002:80'
+      - '3307:3306'
     container_name: mirea_rschir_first_db
